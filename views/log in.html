@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kabbee | welcome</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <header>
+        <div>
+        <h1 class="h1"><span class="highlight">Kabbee</span> team</h1>
+        </div>   
+    </header>
+    <div class="main">
+    <div class="login-box">
+         <h1>Login</h1>
+         <span id="errorDisplay"></span>
+        <form action="Home.html">
+               <label for="uname"><b>User Name</b></label>
+               <input  type="text" id="eml" placeholder="user name">
+               <label for="psw"><b>password</b></label>
+               <input  type="password" id="psw" placeholder="password">
+               <input id="login" type="submit" class="btn" name="" value="login">
+               <label><input type="checkbox" checked="" class="checked" name="remember"> Remember me</label>
+        </form>
+             <div class="btn2">
+                <button type="button" class="csl-btn">cancel</button>
+                <span class="spn">forgot <a href="#"> password</a></span><br>
+            </div>
+  </div>
+</div>
+            <footer>
+                <p>GK web Deising, Copyrite &copy;2019 </p>
+            </footer>
+</section>
+        <script>
+
+            var acceptedEmail='gkb';
+            var acceptedPassword='gk90';
+            login.onclick = function(event) {
+                event.preventDefault();
+                var email=document.getElementById("eml").value;
+                var password=document.getElementById("psw").value;
+    
+                if(acceptedEmail != email || acceptedPassword != password){
+                    errorDisplay.innerHTML = 'Error : please insert valid email and password!';
+                    errorDisplay.style.display = 'inline';
+                    return;
+                }
+                else{
+                    window.location = 'Home.html';
+                 }
+                
+            }
+            
+        </script>
+</body>
+</html>

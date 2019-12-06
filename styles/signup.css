@@ -1,0 +1,74 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color:green;
+    padding-top: 30px;
+}
+/* header*/
+header{
+    background:green;
+   color: #ffffff;
+    padding-top:0px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+  
+.login-box{ 
+    width: 30%;
+    padding: 20px 20px;
+    margin-left:35%;
+    margin-top: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-style:ridge ;
+}
+/*heading*/
+.h1{
+    text-align: center;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+/* buttons */
+.btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+  }
+  .checked{
+     width:10px; 
+     height: 10px;
+  }
+  
+  .csl-btn{
+      background: red;
+      width: 40%;
+      height: 40px;
+      margin-bottom:5%;
+      margin-left: 5px;
+  }
+   
+footer{
+    position: relative;
+    padding: 20px;
+    margin-top:-90px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+} 
+  
